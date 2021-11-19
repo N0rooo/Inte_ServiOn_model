@@ -4,6 +4,18 @@
     }
 }
 
+@mixin giant_card{
+    height: 32.1rem;
+
+    .top-blue{
+        opacity: 1;
+    }
+    form{
+        scale:1;
+    }
+}
+
+
 $xl: 1600px;
 
 @mixin xs{

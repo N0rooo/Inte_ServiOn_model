@@ -110,6 +110,11 @@ p {
   line-height: 2rem;
 }
 
+span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
 .button {
   border: none;
   font-size: 0.9rem;
@@ -395,6 +400,84 @@ p {
   color: #93A5FF;
   display: flex;
   float: right;
+}
+
+.hosting {
+  height: 50.85rem;
+  padding: 0 7.14%;
+}
+.hosting .card_container {
+  display: flex;
+  justify-content: space-between;
+}
+.hosting .card_container .card {
+  width: 18rem;
+  height: 25.85rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #2E2E2E;
+  margin: 4.5rem 1.4%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.hosting .card_container .card .top-blue {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #93A5FF;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+.hosting .card_container .card img {
+  height: 2.9rem;
+  margin-top: 4rem;
+  margin-bottom: 1.8rem;
+}
+.hosting .card_container .card hr {
+  border: 0 none;
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBEB;
+  position: absolute;
+  top: 17.9rem;
+}
+.hosting .card_container .card p {
+  margin: 1.1rem 2.1rem 0 2.1rem;
+}
+.hosting .card_container .card span {
+  font-size: 2rem;
+}
+.hosting .card_container .card span span {
+  font-size: 1rem;
+}
+.hosting .card_container .card form {
+  position: absolute;
+  top: 26.4rem;
+  scale: 0;
+  transition: scale 0.5s;
+}
+.hosting .card_container .card form input {
+  background-color: #F7F8FF;
+  color: #93A5FF;
+}
+.hosting .card_container .card .price {
+  position: absolute;
+  top: 19rem;
+}
+.hosting .card_container .card-giant, .hosting .card_container .card:hover {
+  height: 32.1rem;
+}
+.hosting .card_container .card-giant .top-blue, .hosting .card_container .card:hover .top-blue {
+  opacity: 1;
+}
+.hosting .card_container .card-giant form, .hosting .card_container .card:hover form {
+  scale: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
