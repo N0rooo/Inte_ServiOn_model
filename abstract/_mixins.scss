@@ -1,0 +1,13 @@
+@mixin hov_scale{
+    &:hover{
+        scale: 1.05;
+    }
+}
+
+$xl: 1600px;
+
+@mixin xs{
+    @media screen and (max-width:$xl){
+        @content;
+    }
+}

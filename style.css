@@ -1,0 +1,327 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+html {
+  font-size: 20px;
+}
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+li {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  list-style: none;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2.45rem;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+
+.button {
+  border: none;
+  font-size: 0.9rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.button:hover {
+  scale: 1.05;
+}
+
+.background_second {
+  background-color: #93A5FF;
+  height: 100vh;
+  width: auto;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+}
+
+.home {
+  position: absolute;
+  inset: 0;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+  background-color: #424D83;
+  color: #ffffff;
+}
+.home .home_container {
+  padding: 0 7.14%;
+}
+.home .home_container > div {
+  display: flex;
+}
+.home .home_container > div .logo {
+  object-fit: contain;
+  position: relative;
+  padding-top: 1.9rem;
+  cursor: pointer;
+}
+.home .home_container > div header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.home .home_container > div header ul {
+  display: flex;
+}
+.home .home_container > div header ul li:not(:last-child) {
+  padding: 2.7rem 1.1rem 0.9rem 1.1rem;
+  display: flex;
+  cursor: pointer;
+  margin: 0 0.7rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+.home .home_container > div header ul li:not(:last-child):hover {
+  background-color: #93A5FF;
+}
+.home .home_container > div header ul .login {
+  background-color: #ffffff;
+  color: #93A5FF;
+  height: 2.7rem;
+  width: 6.2rem;
+  margin-left: 0.7rem;
+  display: flex;
+  padding: 0 1.1rem;
+  align-items: center;
+  position: relative;
+  top: 1.8rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.home .home_container > div header ul .login span {
+  padding-left: 0.9rem;
+  scale: 0.95;
+}
+
+.title_container {
+  display: flex;
+  width: auto;
+  height: 18.6rem;
+  margin-top: 4rem;
+}
+.title_container > div {
+  display: flex;
+  flex-direction: column;
+}
+.title_container > div:first-child {
+  padding-top: 6.3rem;
+  width: 50%;
+}
+.title_container > div:first-child h1 {
+  padding-bottom: 1.1rem;
+}
+.title_container > div:last-child {
+  background-image: url(img/home_back.png);
+  width: 50%;
+  background-size: cover;
+}
+@media screen and (max-width: 1600px) {
+  .title_container > div:last-child {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.search_button {
+  display: flex;
+  margin-top: 2.6rem;
+}
+.search_button input:first-child, .search_button select {
+  background-color: #384170;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.search_button input:first-child {
+  width: 17.3rem;
+  height: 2.7rem;
+  margin-right: 0.2rem;
+  padding: 0.7rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.search_button select {
+  border-radius: 0 0.25rem 0.25rem 0;
+  width: 6.1rem;
+  margin-right: 1.6rem;
+}
+.search_button input:last-child {
+  width: 11.1rem;
+  background-color: #93A5FF;
+  color: #ffffff;
+}
+
+.join_us {
+  padding: 0 7.14%;
+  width: auto;
+  height: 42.5rem;
+  margin-bottom: 5.3rem;
+}
+.join_us > div:first-child {
+  padding-top: 4.2rem;
+  color: #2E2E2E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.join_us > div:first-child h2 {
+  padding-bottom: 1.4rem;
+}
+.join_us .join_us_container {
+  padding-top: 4.3rem;
+  display: flex;
+}
+.join_us .join_us_container .article_container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.join_us .join_us_container article {
+  display: flex;
+  color: #2E2E2E;
+  padding-bottom: 3.2rem;
+  margin-right: 5.8rem;
+}
+.join_us .join_us_container article img {
+  object-fit: contain;
+  position: relative;
+  top: -2rem;
+  max-width: 3.6rem;
+}
+.join_us .join_us_container article > div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.7rem;
+}
+.join_us .join_us_container article p {
+  margin-top: 1.8rem;
+  line-height: 2rem;
+}
+.join_us .join_us_container .img_container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.join_us .join_us_container .img_container img:first-child {
+  max-height: 19.6rem;
+}
+.join_us .join_us_container .img_container .dotted_1 {
+  position: absolute;
+  top: 2.75rem;
+  right: 0;
+  max-height: 12rem;
+}
+.join_us .join_us_container .img_container .dotted_2 {
+  position: absolute;
+  bottom: 2.75rem;
+  left: 0;
+  height: 12rem;
+}
+
+.where_start {
+  height: 41.4rem;
+  padding: 0 7.14%;
+  width: auto;
+  padding-bottom: 5.3rem;
+  background-color: #F7F8FF;
+}
+.where_start > div:first-child {
+  padding-top: 5.5rem;
+  color: #2E2E2E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.where_start > div:first-child h2 {
+  padding-bottom: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
