@@ -1,4 +1,6 @@
-@import '../abstract/mixins';
+@import '../abstract/variables',
+        '../abstract/mixins';
+
 *{
     box-sizing: border-box;
     transition: all 0.5s;
@@ -65,5 +67,17 @@ p{
     
     &:hover{
         scale: 1.05;
+    }
+}
+
+.title-subtitle{
+    padding-top: 4.2rem;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2{
+        padding-bottom: 1.4rem;
     }
 }

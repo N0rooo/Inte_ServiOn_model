@@ -123,6 +123,17 @@ p {
   scale: 1.05;
 }
 
+.title-subtitle {
+  padding-top: 4.2rem;
+  color: #2E2E2E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-subtitle h2 {
+  padding-bottom: 1.4rem;
+}
+
 .background_second {
   background-color: #93A5FF;
   height: 42.55rem;
@@ -319,16 +330,6 @@ p {
   width: auto;
   padding-bottom: 5.3rem;
   background-color: #F7F8FF;
-}
-.where_start > div:first-child {
-  padding-top: 5.5rem;
-  color: #2E2E2E;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.where_start > div:first-child h2 {
-  padding-bottom: 1.4rem;
 }
 .where_start > div:last-child {
   display: flex;
