@@ -7,7 +7,7 @@
 .background_second{
 
     background-color: $blue;
-    height: 100vh;
+    height: 42.55rem;
     width: auto;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
@@ -17,7 +17,7 @@
 .home{
     position: absolute;
     inset: 0;
-    height: 100vh;
+    height: 42.55rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
     
     
@@ -140,6 +140,8 @@
         width: 11.1rem;
         background-color: $blue;
         color: $white;
+        
+        
     }
 
     
@@ -193,11 +195,7 @@
                 flex-direction: column;
                 padding-left: 1.7rem;
             }
-            p{
-
-                margin-top: 1.8rem;
-                line-height: 2rem;
-            }
+            
         }
         .img_container{
             
@@ -245,6 +243,81 @@
 
         h2{
             padding-bottom: 1.4rem;
+        }
+    }
+    >div:last-child{
+        display: flex;
+        height: 100%;
+        
+        .card_container{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            padding-top: 4.55rem;
+            
+
+            &-build{
+                display: flex;
+                justify-content: left;
+
+                .card{
+                    background-color: $blue;
+                    margin-right: 2.6rem;
+                }
+            }
+            &-move{
+                display: flex;
+                justify-content: right;
+
+                .card{
+                    background-color: $dark_blue;
+                    margin-left: 2.6rem;
+                }
+            }
+            
+            .card{
+                height:22.02rem;
+                display: flex;
+                flex-direction: column;
+                border-radius: 0.25rem;
+                color: $white;
+                position: relative;
+
+                .img-top-right{
+                    object-fit: contain;
+                    max-width: 13.25rem;
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                
+                &-margin{
+                    top:1.75rem;
+                    right: 1rem;
+                }
+            }
+
+                article{
+                    margin: 2.25rem 2.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: auto;
+                    margin-bottom: auto;
+
+                    img{
+                        max-width: 3.9rem ;
+                    }
+                    h4{
+                        padding-top: 2.25rem;
+                    }
+                    input{
+                        background-color: $white;
+                        color: $blue;
+                        display: flex;
+                        float: right;
+                    }
+                }
+            }
         }
     }
 }

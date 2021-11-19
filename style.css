@@ -94,10 +94,20 @@ h4 {
   font-size: 1.15rem;
 }
 
-p {
+h5 {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 1.15rem;
+  margin-top: 1.8rem;
+  line-height: 2rem;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1.8rem;
+  line-height: 2rem;
 }
 
 .button {
@@ -107,6 +117,7 @@ p {
   font-weight: 600;
   cursor: pointer;
   border-radius: 0.25rem;
+  padding: 0.7rem;
 }
 .button:hover {
   scale: 1.05;
@@ -114,7 +125,7 @@ p {
 
 .background_second {
   background-color: #93A5FF;
-  height: 100vh;
+  height: 42.55rem;
   width: auto;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
@@ -123,7 +134,7 @@ p {
 .home {
   position: absolute;
   inset: 0;
-  height: 100vh;
+  height: 42.55rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
   background-color: #424D83;
   color: #ffffff;
@@ -279,10 +290,6 @@ p {
   flex-direction: column;
   padding-left: 1.7rem;
 }
-.join_us .join_us_container article p {
-  margin-top: 1.8rem;
-  line-height: 2rem;
-}
 .join_us .join_us_container .img_container {
   display: flex;
   width: 50%;
@@ -322,6 +329,71 @@ p {
 }
 .where_start > div:first-child h2 {
   padding-bottom: 1.4rem;
+}
+.where_start > div:last-child {
+  display: flex;
+  height: 100%;
+}
+.where_start > div:last-child .card_container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding-top: 4.55rem;
+}
+.where_start > div:last-child .card_container-build {
+  display: flex;
+  justify-content: left;
+}
+.where_start > div:last-child .card_container-build .card {
+  background-color: #93A5FF;
+  margin-right: 2.6rem;
+}
+.where_start > div:last-child .card_container-move {
+  display: flex;
+  justify-content: right;
+}
+.where_start > div:last-child .card_container-move .card {
+  background-color: #384170;
+  margin-left: 2.6rem;
+}
+.where_start > div:last-child .card_container .card {
+  height: 22.02rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  position: relative;
+}
+.where_start > div:last-child .card_container .card .img-top-right {
+  object-fit: contain;
+  max-width: 13.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.where_start > div:last-child .card_container .card .img-top-right-margin {
+  top: 1.75rem;
+  right: 1rem;
+}
+.where_start > div:last-child .card_container .card article {
+  margin: 2.25rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.where_start > div:last-child .card_container .card article img {
+  max-width: 3.9rem;
+}
+.where_start > div:last-child .card_container .card article h4 {
+  padding-top: 2.25rem;
+}
+.where_start > div:last-child .card_container .card article input {
+  background-color: #ffffff;
+  color: #93A5FF;
+  display: flex;
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -39,10 +39,19 @@ h4{
     font-size: 1.15rem;
 }
 
-p{
+h5{
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 1.15rem;
+    margin-top: 1.8rem;
+    line-height: 2rem;
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    line-height: 2rem;
 }
 
 .button{
@@ -52,6 +61,7 @@ p{
     font-weight: 600;
     cursor: pointer;
     border-radius: 0.25rem;
+    padding: 0.7rem;
     
     &:hover{
         scale: 1.05;
