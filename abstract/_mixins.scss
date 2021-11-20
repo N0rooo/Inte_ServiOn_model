@@ -17,9 +17,21 @@
 
 
 $xl: 1600px;
+$l: 1024px;
+$s: 600px;
 
-@mixin xs{
+@mixin laptop{
     @media screen and (max-width:$xl){
+        @content;
+    }
+}
+@mixin ipad{
+    @media screen and (max-width:$l){
+        @content;
+    }
+}
+@mixin mobile{
+    @media screen and (max-width:$s){
         @content;
     }
 }

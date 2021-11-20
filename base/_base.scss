@@ -7,8 +7,11 @@
 }
 html{
     font-size: 20px;
-    @include xs{
+    @include laptop{
         font-size: 18px;
+    }
+    @include ipad{
+        font-size: 15px;
     }
 }
 li{
@@ -37,7 +40,7 @@ h3{
 
 h4{
     font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.15rem;
 }
 
@@ -56,6 +59,15 @@ p{
 span{
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
+}
+
+a{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $white;
+    line-height: 1.8rem;
 }
 
 .button{
@@ -83,5 +95,15 @@ span{
         padding-bottom: 1.4rem;
     }
 }
+
+.dotted_1, .dotted_2{
+    @include ipad{
+        scale: 56.25%;
+    }
+    @include mobile{
+        display: none;
+    }
+}
+
 
 

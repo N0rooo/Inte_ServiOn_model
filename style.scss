@@ -4,26 +4,31 @@
 @import 'abstract/variables',
         'abstract/mixins';
 
+@import 'components/burger';
+
 .background_second{
 
     background-color: $blue;
     height: 42.55rem;
     width: auto;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-    
-    
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 94.5%, 60% 88.6%, 0 100%);
+    @include mobile{
+        height: 100vh;
+    }
 }        
 .home{
     position: absolute;
     inset: 0;
     height: 42.55rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
-    
-    
-    
+    clip-path: polygon(0 0, 100% 0, 100% 94.5%, 0 80%);
     background-color: $mid_blue;
     color: $white;
+
+    @include mobile{
+        height: 100vh;
+    }
+
     .home_container{
         padding: $margin;
     
@@ -41,6 +46,10 @@
                 display: flex;
                 width: 100%;
                 justify-content: flex-end;
+
+                @include ipad{
+                    display: none;
+                }
 
                 ul{
                     display: flex;
@@ -89,15 +98,12 @@
     >div{
         display: flex;
         flex-direction: column;
-        
-
     }
 
     >div:first-child{
         padding-top: 6.3rem ;
         width: 50%;
-        
-
+    
         h1{
             padding-bottom: 1.1rem;
         }
@@ -106,7 +112,7 @@
         background-image: url(img/home_back.png);
         width: 50%;
         background-size: cover;
-        @include xs{
+        @include laptop{
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -116,7 +122,15 @@
 .search_button{
     display: flex;
     margin-top: 2.6rem;
+    @include mobile{
+        flex-wrap: wrap;
+    }
     
+    input, select{
+        @include mobile{
+            margin: 0.5rem;
+        }
+    }
 
     input:first-child, select{
         background-color: $dark_blue;
@@ -146,7 +160,8 @@
 .join_us{
     padding: $margin;
     width: auto;
-    height: 42.5rem;
+    height: auto;
+    min-height: 42.5rem;
     margin-bottom: 5.3rem ;
 
     h5{
@@ -168,13 +183,21 @@
     .join_us_container{
         padding-top: 4.3rem;
         display: flex;
+        @include ipad{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
         
         .article_container{
             width: 50%;
-            height: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @include ipad{
+                width: 100%;
+            }
         }
         
         article{
@@ -182,6 +205,7 @@
             color: $black;
             padding-bottom: 3.2rem;
             margin-right: 5.8rem;
+            
 
             img{
                 object-fit: contain;
@@ -205,13 +229,21 @@
             position: relative;
             
             img:first-child{
-                max-height: 19.6rem;
+                height: 19.6rem;
             }
             .dotted_1{
                 position: absolute;
                 top: 2.75rem;
                 right: 0;
                 max-height: 12rem;
+                @include laptop{
+                    right: -1rem;
+                    top: 3.5rem;
+                }
+                @include ipad{
+                    right: -8.5rem;
+                    top: -2.8rem;
+                }
                 
             }
             .dotted_2{
@@ -219,13 +251,25 @@
                 bottom: 2.75rem;
                 left: 0;
                 height: 12rem;
+                
+                @include laptop{
+                    left: -2rem;
+                    bottom:3.5rem;
+                }
+                @include ipad{
+                    left: -8rem;
+                    bottom: -3.8rem;
+                    right: 20rem;
+
+                }
             }
         }
     }
 }
 
 .where_start{
-    height: 41.4rem;
+    min-height: 41.4rem;
+    height: auto;
     padding: $margin;
     width: auto;
     padding-bottom: 5.3rem ;
@@ -238,9 +282,11 @@
     >div:last-child{
         display: flex;
         height: 100%;
+        @include ipad{
+            flex-direction: column;
+        }
         
         .card_container{
-            width: 50%;
             height: 100%;
             display: flex;
             padding-top: 4.55rem;
@@ -252,6 +298,9 @@
                 .card{
                     background-color: $blue;
                     margin-right: 5.2%;
+                    @include ipad{
+                        margin: 5.2%;
+                    }
                 }
             }
             &-move{
@@ -259,18 +308,23 @@
                 justify-content: right;
 
                 .card{
-                    background-color: $dark_blue;
+                    background-color: $mid_blue;
                     margin-left: 5.2%;
+                    @include ipad{
+                        margin: 0 5.2%;
+                    }
                 }
             }
             
             .card{
-                height:22.02rem;
+                min-height:22.02rem;
+                height: auto;
                 display: flex;
                 flex-direction: column;
                 border-radius: 0.25rem;
                 color: $white;
                 position: relative;
+                
 
                 .img-top-right{
                     object-fit: contain;
@@ -278,10 +332,18 @@
                     position: absolute;
                     top:0;
                     right: 0;
+                    @include mobile{
+                        scale:0.6;
+                    }
                 
                 &-margin{
                     top:1.75rem;
                     right: 1rem;
+
+                    @include mobile{
+                        top: 0;
+                        right: 0;
+                    }
                 }
             }
 
@@ -290,11 +352,9 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    margin-top: auto;
-                    margin-bottom: auto;
 
                     img{
-                        max-width: 3.9rem ;
+                        width: 3.9rem ;
                     }
                     h4{
                         padding-top: 2.25rem;
@@ -304,6 +364,11 @@
                         color: $blue;
                         display: flex;
                         float: right;
+                        
+                        @include ipad{
+                            margin-top: 1rem;
+                        }
+                        
                     }
                 }
             }
@@ -312,12 +377,19 @@
 }
 
 .hosting{
-    height: 50.85rem;
+    min-height: 50.85rem;
+    height: auto;
     padding: $margin;
 
     .card_container{
         display: flex;
         justify-content: space-between;
+        @include ipad {
+            flex-wrap: wrap;
+            margin: 4rem 0;
+            justify-content: center;
+            
+        }
 
         .card{
             width: 18rem;
@@ -381,12 +453,15 @@
                     color: $blue;
                 }
             }
+            @include ipad{
+                margin: 1rem 1.4%;
+                @include giant_card;
+            }
             
             .price{
                 position: absolute;
                 top: 19rem;
             }
-
             &-giant, &:hover{
                 @include giant_card;
             }
@@ -395,19 +470,38 @@
 }
 
 .customers{
-    height: 33.2rem;
+    min-height: 33.2rem;
+    height: auto;
     background-color: $light_blue;
     position: relative;
+    @include ipad{
+        min-height: 40rem;
+    }
+
+    .title-subtitle{
+        margin: $margin;
+    }
     
     .opinion_container{
         display: flex;
         margin: $margin;
 
+        @include ipad{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+
         article{
             width: 50%;
-            height: 9.75rem;
+            min-height: 9.75rem;
+            height: auto;;
             margin: 4.5rem 0 0 3.5%;
             display: flex;
+
+            @include mobile{
+                flex-direction: column;
+            }
             
             &:first-child{
                 margin: 4.5rem 3.5% 0 0;
@@ -439,18 +533,30 @@
         justify-content: center;
         margin: 3.85rem 0;
         height: 1.5rem;
+        @include mobile{
+            opacity: 0;
+        }
     }
     .dotted_1{
         position: absolute;
         top: -2rem;
-        right: -1rem;
+        right: 0;
         max-height: 12rem;
+        @include ipad{
+            scale: 56.25%;
+            right: -3rem;
+            top: -3.8rem;
+        }
     }
     .dotted_2{
         position: absolute;
         bottom: -3.1rem;
         left: 0;
         max-height: 12rem;
+        @include ipad{
+            left: -3rem;
+            bottom: -5rem;
+        }
     }
 }
 
@@ -462,11 +568,18 @@
         display: flex;
         padding: 4.89% 0 4.27% 0;
         justify-content: space-between;
+        @include ipad{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
         img{
             object-fit: contain;
             padding: 0 3.63%;
             height: 2.11rem;
+            @include ipad{
+                margin: 1rem 0;
+            }
         }
 
         :first-child{
@@ -487,3 +600,96 @@
         }
     }
 }
+
+.footer{
+        
+    height: 67vh;
+    background-color: $blue;
+    color: $white;
+    position: relative;
+    clip-path: polygon(50% 11.4%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 0);
+
+    @include mobile{
+        height: 120vh;
+    }
+
+    .background_second_bis{
+        background-color: $mid_blue;
+        position: absolute;
+        position: absolute;
+        inset: 0;
+        clip-path: polygon(0 0, 100% 22.8%, 100% 100%, 0% 100%);
+
+        @include mobile{
+            height: 120vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+
+        >div{
+            
+            display: flex;
+            margin: $margin;
+            justify-content: space-between;
+            padding-top: 4.85rem;
+            flex-wrap: wrap;
+            
+            @include ipad{
+                justify-content: center;
+            }
+
+            &:first-child{
+                padding-top: 11.5rem;
+            }
+
+            article{
+                display: flex;
+                flex-direction: column;
+                @include ipad{
+                    padding: 1rem 2rem;
+                    align-items: center;
+                }
+                
+                h4{
+                    padding-bottom: 1.2rem;
+                }
+                >div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                    img{
+                        height: 2rem;
+                        margin: 0.25rem;
+                        
+                    }
+                }  
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin: $margin;
+
+    @include ipad{
+        flex-direction: column;
+        align-items: center;
+        
+        .street{
+            margin-bottom: 2rem;
+        }
+    }
+
+}
+
+
+
+
+
+
+

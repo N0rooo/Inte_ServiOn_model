@@ -1,0 +1,62 @@
+@import '../base/base';
+
+@import '../abstract/variables',
+        '../abstract/mixins';
+
+// Burger Responsive
+
+.burger, .x{
+    cursor: pointer;
+    width: 2.5rem;
+    position:fixed;
+    top: 1rem;
+    right:2rem;
+    display: none;
+
+    @include ipad{
+        display: block;
+    }
+    
+}
+.menu-burger{
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right:0;
+    bottom: -100px;
+    background-color: rgba(23, 23, 39, 0.9);
+    transform: translateX(500px); 
+    padding-top: 100px;
+    padding-right: 50px;
+    margin-top: 0;
+    z-index: 2;
+
+    li{
+        text-align: center;
+        list-style-type: none;
+        font-size: 20px ;
+    }
+    ul{
+        margin: 5px 0;
+        width: 200px;
+        padding: 20px;
+
+        &:hover{
+            background-color: $light_blue;
+            color: $blue;
+        }
+    }
+}
+
+// Toggles
+.visible{
+    transform: translateX(0);
+}
+.invisible{
+    transform: translateX(500px); 
+}
+.visible_p{
+    opacity: 0;
+    height: 0;
+    transition: 0.2s ease-out;
+}
