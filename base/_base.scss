@@ -45,15 +45,13 @@ h5{
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 1.15rem;
-    margin-top: 1.8rem;
     line-height: 2rem;
 }
 p{
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    margin-top: 1.8rem;
-    line-height: 2rem;
+    
 }
 span{
     font-family: 'Nunito', sans-serif;
@@ -75,7 +73,7 @@ span{
 }
 
 .title-subtitle{
-    padding-top: 4.2rem;
+    padding-top: 5.45rem;
     color: $black;
     display: flex;
     flex-direction: column;
@@ -85,3 +83,5 @@ span{
         padding-bottom: 1.4rem;
     }
 }
+
+

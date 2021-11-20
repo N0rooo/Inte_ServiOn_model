@@ -149,6 +149,10 @@
     height: 42.5rem;
     margin-bottom: 5.3rem ;
 
+    h5{
+        margin-top: 1.8rem;
+    }
+
     >div:first-child{
         padding-top: 4.2rem;
         color: $black;
@@ -226,6 +230,10 @@
     width: auto;
     padding-bottom: 5.3rem ;
     background-color: $light_blue;
+    p{
+        margin-top: 1.8rem;
+        line-height: 2rem;
+        }
     
     >div:last-child{
         display: flex;
@@ -243,7 +251,7 @@
 
                 .card{
                     background-color: $blue;
-                    margin-right: 2.6rem;
+                    margin-right: 5.2%;
                 }
             }
             &-move{
@@ -252,7 +260,7 @@
 
                 .card{
                     background-color: $dark_blue;
-                    margin-left: 2.6rem;
+                    margin-left: 5.2%;
                 }
             }
             
@@ -350,6 +358,7 @@
             }
             p{
                 margin: 1.1rem 2.1rem 0 2.1rem;
+                line-height: 2rem;
                 
             }
 
@@ -371,23 +380,110 @@
                     background-color: $light_blue;
                     color: $blue;
                 }
-                
             }
             
-
             .price{
                 position: absolute;
                 top: 19rem;
             }
 
-            
-
             &-giant, &:hover{
                 @include giant_card;
             }
         }
-
-
     }
+}
 
+.customers{
+    height: 33.2rem;
+    background-color: $light_blue;
+    position: relative;
+    
+    .opinion_container{
+        display: flex;
+        margin: $margin;
+
+        article{
+            width: 50%;
+            height: 9.75rem;
+            margin: 4.5rem 0 0 3.5%;
+            display: flex;
+            
+            &:first-child{
+                margin: 4.5rem 3.5% 0 0;
+            }
+
+            .portrait{
+                object-fit: contain;
+                height: 6.2rem;
+                position: relative;
+                top: -0.5rem;
+                padding-right: 1.67%;
+                
+            }
+            .stars{
+                height: 0.93rem;
+            }
+            h5{
+                margin: 1.5rem 0;
+                font-style: italic;
+            }
+            p{
+                font-weight: bold;
+            }
+        }
+    }
+    
+    .slider{
+        display: flex;
+        justify-content: center;
+        margin: 3.85rem 0;
+        height: 1.5rem;
+    }
+    .dotted_1{
+        position: absolute;
+        top: -2rem;
+        right: -1rem;
+        max-height: 12rem;
+    }
+    .dotted_2{
+        position: absolute;
+        bottom: -3.1rem;
+        left: 0;
+        max-height: 12rem;
+    }
+}
+
+.clients{
+    height:28.9rem;
+    margin: $margin;
+    
+    >div:nth-of-type(2){
+        display: flex;
+        padding: 4.89% 0 4.27% 0;
+        justify-content: space-between;
+
+        img{
+            object-fit: contain;
+            padding: 0 3.63%;
+            height: 2.11rem;
+        }
+
+        :first-child{
+            padding-left: 0;
+            
+        }
+        :last-child{
+            padding-right: 0;
+        }
+    }
+    form{
+        display: flex;
+        justify-content: center;
+
+        input{
+            color: $white;
+            background-color: $blue;
+        }
+    }
 }

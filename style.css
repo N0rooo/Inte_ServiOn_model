@@ -98,7 +98,6 @@ h5 {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 1.15rem;
-  margin-top: 1.8rem;
   line-height: 2rem;
 }
 
@@ -106,8 +105,6 @@ p {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  margin-top: 1.8rem;
-  line-height: 2rem;
 }
 
 span {
@@ -129,7 +126,7 @@ span {
 }
 
 .title-subtitle {
-  padding-top: 4.2rem;
+  padding-top: 5.45rem;
   color: #2E2E2E;
   display: flex;
   flex-direction: column;
@@ -156,7 +153,7 @@ span {
   color: #ffffff;
 }
 .home .home_container {
-  padding: 0 7.14%;
+  padding: 0 7.15%;
 }
 .home .home_container > div {
   display: flex;
@@ -263,10 +260,13 @@ span {
 }
 
 .join_us {
-  padding: 0 7.14%;
+  padding: 0 7.15%;
   width: auto;
   height: 42.5rem;
   margin-bottom: 5.3rem;
+}
+.join_us h5 {
+  margin-top: 1.8rem;
 }
 .join_us > div:first-child {
   padding-top: 4.2rem;
@@ -331,10 +331,14 @@ span {
 
 .where_start {
   height: 41.4rem;
-  padding: 0 7.14%;
+  padding: 0 7.15%;
   width: auto;
   padding-bottom: 5.3rem;
   background-color: #F7F8FF;
+}
+.where_start p {
+  margin-top: 1.8rem;
+  line-height: 2rem;
 }
 .where_start > div:last-child {
   display: flex;
@@ -352,7 +356,7 @@ span {
 }
 .where_start > div:last-child .card_container-build .card {
   background-color: #93A5FF;
-  margin-right: 2.6rem;
+  margin-right: 5.2%;
 }
 .where_start > div:last-child .card_container-move {
   display: flex;
@@ -360,7 +364,7 @@ span {
 }
 .where_start > div:last-child .card_container-move .card {
   background-color: #384170;
-  margin-left: 2.6rem;
+  margin-left: 5.2%;
 }
 .where_start > div:last-child .card_container .card {
   height: 22.02rem;
@@ -404,7 +408,7 @@ span {
 
 .hosting {
   height: 50.85rem;
-  padding: 0 7.14%;
+  padding: 0 7.15%;
 }
 .hosting .card_container {
   display: flex;
@@ -449,6 +453,7 @@ span {
 }
 .hosting .card_container .card p {
   margin: 1.1rem 2.1rem 0 2.1rem;
+  line-height: 2rem;
 }
 .hosting .card_container .card span {
   font-size: 2rem;
@@ -478,6 +483,89 @@ span {
 }
 .hosting .card_container .card-giant form, .hosting .card_container .card:hover form {
   scale: 1;
+}
+
+.customers {
+  height: 33.2rem;
+  background-color: #F7F8FF;
+  position: relative;
+}
+.customers .opinion_container {
+  display: flex;
+  margin: 0 7.15%;
+}
+.customers .opinion_container article {
+  width: 50%;
+  height: 9.75rem;
+  margin: 4.5rem 0 0 3.5%;
+  display: flex;
+}
+.customers .opinion_container article:first-child {
+  margin: 4.5rem 3.5% 0 0;
+}
+.customers .opinion_container article .portrait {
+  object-fit: contain;
+  height: 6.2rem;
+  position: relative;
+  top: -0.5rem;
+  padding-right: 1.67%;
+}
+.customers .opinion_container article .stars {
+  height: 0.93rem;
+}
+.customers .opinion_container article h5 {
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+.customers .opinion_container article p {
+  font-weight: bold;
+}
+.customers .slider {
+  display: flex;
+  justify-content: center;
+  margin: 3.85rem 0;
+  height: 1.5rem;
+}
+.customers .dotted_1 {
+  position: absolute;
+  top: -2rem;
+  right: -1rem;
+  max-height: 12rem;
+}
+.customers .dotted_2 {
+  position: absolute;
+  bottom: -3.1rem;
+  left: 0;
+  max-height: 12rem;
+}
+
+.clients {
+  height: 28.9rem;
+  margin: 0 7.15%;
+}
+.clients > div:nth-of-type(2) {
+  display: flex;
+  padding: 4.89% 0 4.27% 0;
+  justify-content: space-between;
+}
+.clients > div:nth-of-type(2) img {
+  object-fit: contain;
+  padding: 0 3.63%;
+  height: 2.11rem;
+}
+.clients > div:nth-of-type(2) :first-child {
+  padding-left: 0;
+}
+.clients > div:nth-of-type(2) :last-child {
+  padding-right: 0;
+}
+.clients form {
+  display: flex;
+  justify-content: center;
+}
+.clients form input {
+  color: #ffffff;
+  background-color: #93A5FF;
 }
 
 /*# sourceMappingURL=style.css.map */
