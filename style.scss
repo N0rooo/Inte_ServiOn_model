@@ -6,6 +6,9 @@
 
 @import 'components/burger';
 
+
+// Backgound diagonals
+// Home 
 .background_second{
 
     background-color: $blue;
@@ -42,6 +45,7 @@
                 cursor: pointer;
             }
 
+            // Header
             header{
                 display: flex;
                 width: 100%;
@@ -89,6 +93,7 @@
     }
 }
 
+// Home content
 .title_container{
     display: flex;
     width: auto;
@@ -157,6 +162,7 @@
     }
 }
 
+// 'JoinUs' part
 .join_us{
     padding: $margin;
     width: auto;
@@ -267,6 +273,7 @@
     }
 }
 
+// Cards part
 .where_start{
     min-height: 41.4rem;
     height: auto;
@@ -376,6 +383,7 @@
     }
 }
 
+// 'Hosting' part
 .hosting{
     min-height: 50.85rem;
     height: auto;
@@ -469,6 +477,7 @@
     }
 }
 
+// 'Customers' part
 .customers{
     min-height: 33.2rem;
     height: auto;
@@ -560,6 +569,7 @@
     }
 }
 
+// 'Users' part
 .clients{
     height:28.9rem;
     margin: $margin;
@@ -600,7 +610,7 @@
         }
     }
 }
-
+// .Footer + footer
 .footer{
         
     height: 67vh;
